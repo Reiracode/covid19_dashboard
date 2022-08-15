@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Taiwan COVID-19 Dashboard</title>
+	<link rel="icon" href="./logo.png" type="image/png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.css">
+	<link rel="stylesheet" href="./mainsss.css">
+</head>
+
+<body>
+	<div id="loading">
+		<div class="loader"></div>
+	</div>
+
+	<div id="container">
+		<div class="header">
+			<h1>Coronavirus (COVID-19),Taiwan</h1>
+			<div class="update_date"><span>Lastest Update </span><span id="title_date"></span></div>
+			<dl class="dashBoard__main">
+				<div>
+					<dt>Total Deaths</dt>
+					<dd id="total_deaths"></dd>
+				</div>
+
+				<div>
+					<dt>Today Cases</dt>
+					<dd id="today_cases"></dd>
+				</div>
+
+				<div>
+					<dt>Total Cases</dt>
+					<dd id="total_cases"></dd>
+				</div>
+			</dl>
+			
+		</div>
+
+		<div class="box1 box">
+			<h5 class="c3_title">台灣本土地理分佈圖</h5>
+			<div id="map">
+				<div id="legend"></div>
+				<div id="tooltip"></div>
+				<svg id="svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="500px" height="600px"></svg>
+			</div>
+		</div>
+
+		<div class="box box2">
+			<h5 class="c3_title">台灣本土病例分佈</h5>
+			<div id="chartcitydesc"></div>
+		</div>
+
+		<div class="box box3">
+			<div id="piechart"></div>
+
+		</div>
+
+		<div class="box box4">
+			<h5 class="c3_title">Number of newly confirmed cases(Date)</h5>
+			<div id="chartworld"></div>
+		</div>
+
+		<div class="box box5">
+			<h5 class="c3_title"><select class="county"></select>每日各縣市新增病例趨勢圖</h5>
+			<div id="chartcity"></div>
+		</div>
+
+		<div class="box box6">
+			<h5 class="c3_title">每日新增本土病例趨勢圖</h5>
+			<div id="chart2"></div>
+			<div id="result-before"></div>
+		</div>
+
+
+	</div>
+
+
+
+	<!-- <p>https://github.com/owid/covid-19-data/tree/master/public/data</p>   -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+	<!-- <script src="https://unpkg.com/topojson@3"></script>   -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.min.js"></script>
+	
+	<script src="./render.js"></script>
+
+</body>
+
+</html>
