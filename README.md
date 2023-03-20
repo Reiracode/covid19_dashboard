@@ -35,7 +35,7 @@ This project demonstrates my frontend development skills in building an interact
 
 ## 特點
 
-- 台灣本土地理分佈圖: 包括地圖，長條圖，圓餅圖，單擊圖表上的國家名稱或地圖上的國家時，圖表和地圖都會更新以顯示該國家的數據。
+- 台灣本土地理分佈圖: 包括地圖，長條圖，圓餅圖。
 - Number of newly confirmed cases(Date)
 - 每日各縣市新增病例趨勢圖
 - 每日新增本土病例趨勢圖
