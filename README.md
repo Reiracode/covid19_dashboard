@@ -32,6 +32,8 @@ This project demonstrates my frontend development skills in building an interact
 
 - C3.js 技術實現圖表可視化。
 - D3.js 中使用地圖資料，使用 GeoJSON 格式. 
+- JSON integration
+ 
 
 ## 特點
 
