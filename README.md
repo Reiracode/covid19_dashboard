@@ -51,32 +51,34 @@ This project demonstrates my frontend development skills in building an interact
 
 # COVID-19 Dashboard
 
-這是一個用於呈現全球 COVID-19 數據的儀表板，使用 React 和 Chart.js 技術構建。用戶可以通過圖表和表格來了解不同國家的 COVID-19 趨勢和統計信息。
+這是一個用於呈現 COVID-19 疫情數據分析的網站。它包含一個地圖，可提供各國的 COVID-19 疫情數據和趨勢分析，以及一個圖表，用於比較各國的病例、死亡和康復人數。
+
 
 ## 特點
-
 - 使用 Chart.js 技術實現圖表可視化。
 - 通過使用 API 獲取即時 COVID-19 數據。
 - 用戶可以通過國家和日期篩選數據。
-- 使用 React Bootstrap 構建 UI 界面，並且具有響應式設計。
-- 語言切換功能，支持英語和簡體中文。
+
+- 交互式地圖，用於顯示 COVID-19 的疫情數據。
+- 地圖上的國家可以進行縮放，以便查看特定地區的數據。
+- 圖表用於比較各國的 COVID-19 病例、死亡和康復人數。
+- 圖表可切換顯示線性或對數的比例。
+- 圖表可選擇顯示的日期範圍，以便查看特定時間段的數據。
+- 地圖和圖表之間可以進行交互，單擊圖表上的國家名稱或地圖上的國家時，圖表和地圖都會更新以顯示該國家的數據。
+
+功能
+儀表板主頁：顯示全球確診、死亡和恢復的總人數、圖表和地圖。
+地圖頁面：可查看各國的 COVID-19 疫情數據、切換主題和查看國家的詳細資訊。
+國家詳細資訊頁面：顯示國家的 COVID-19 疫情數據和趨勢圖表，包括確診、死亡和恢復的人數，以及表格顯示每日數據。
+
+ 
 
 ## 技術應用
-
-- React
 - Chart.js
 - Axios
 - React Bootstrap
-- react-i18next
 - day.js
 
-
-## 使用方法
-
-1. 克隆此存儲庫: `git clone https://github.com/reiracode/covid19_dashboard.git`
-2. 安裝所有依賴項: `npm install`
-3. 運行應用程序: `npm start`
-4. 在瀏覽器中打開應用程序: `http://localhost:3000/`
 
 ## DEMO
 
